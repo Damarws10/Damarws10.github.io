@@ -1,0 +1,44 @@
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.con-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
+	max-width: 464px;
+	margin: auto;
+	margin-top: 10px;
+	width: 100%;
+	position: relative;
+	z-index: 10;
+	box-shadow: 0px 15px 20px -5px rgba(0,0,0,.08);
+	border-radius: 0px 0px 30px 30px;
+}
+
+.con-menu button {
+	padding: 12px;
+	width: calc(50% - 4px);
+	border: 0px;
+	background: transparent;
+	font-weight: bold;
+	color: rgb(var(--text));
+	font-size: 1rem;
+	transition: all .25s ease;
+	box-shadow: 0px 0px 0px 0px rgba(0,0,0,.08);
+	border-radius: 16px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.con-menu button.active {
+	background: #fff;
+	box-shadow: 0px 5px 25px 0px rgba(0,0,0,.06);
+	color: #931A25;
+}
